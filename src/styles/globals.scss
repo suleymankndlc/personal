@@ -1,0 +1,28 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --muted-rgb: 50, 50, 50;
+  --background-rgb: 255, 255, 255;
+  --overlay-bg: rgba(0, 0, 0, 0.08);
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  [data-theme="dark"] {
+    --foreground-rgb: 255, 255, 255;
+    --muted-rgb: 150, 150, 150;
+    --background-rgb: 0, 0, 0;
+    --overlay-bg: rgba(255, 255, 255, 0.2);
+    --border-color: rgba(255, 255, 255, 0.24);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  min-height: 100vh;
+}
+
+@import "layout";
+@import "menu";
+@import "text";
+@import "project";
